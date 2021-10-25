@@ -1,0 +1,74 @@
+.Profile {
+  main {
+    .profile-header {
+      padding: 40px 0;
+      background-color: #eee;
+
+      p {
+        margin: 5px 0;
+      }
+    }
+  
+    .profile-body {
+      padding: 30px;
+    }
+
+    h1 {
+      margin-top: 5px;
+      margin-bottom: 15px;
+    }
+
+    h2 {
+      margin-bottom: 15px;
+    }
+
+    a {
+      color: #197;
+      &:focus, &:hover {
+        color: #086;
+      }
+    }
+  
+    section {
+      margin: 10px;
+    }
+
+    .icon {
+      width: 200px;
+      padding: 20px;
+    }
+  }
+
+  .navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    background-color: #197;
+    border-color: #197;
+    
+    .navbar-brand {
+      color: #fff !important;
+      font-weight: bold;
+    }
+    
+    .nav-link {
+      color: #dfe !important;
+      
+      &:focus, &:hover, &.active {
+        color: #fff !important;
+      }
+    }
+
+    .navbar-toggler {
+      background-color: #197 !important;
+      border-color: #197 !important;
+      &:focus, &:hover {
+        background-color: #2a8 !important;
+      }
+    }
+  }
+  
+  footer {
+    background-color: #eee;
+    padding: 25px;
+  }
+}

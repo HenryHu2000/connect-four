@@ -1,0 +1,10 @@
+@import 'src/common';
+
+.start-screen {
+  h1 {
+    font-size: 175%;
+    font-weight: normal;
+    color: $fontColour;
+    margin-top: 50px;
+  }
+}

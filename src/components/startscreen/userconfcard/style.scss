@@ -1,0 +1,52 @@
+@import 'src/common';
+
+.user-conf-card {
+  display: inline-block;
+  padding: 30px 30px;
+
+  input[type=text] {
+    text-align: center;
+    font-size: 150%;
+    color: $fontColour;
+    width: 225px;
+    outline: 0;
+    border-width: 0 0 2px;
+    margin: 20px 0;
+    border-color: lighten($fontColour, 40);
+    &:focus, &:hover {
+      border-color: $fontColour;
+    }
+  }
+  
+  label.radio {
+    display: inline-block;
+    cursor: pointer;
+    input[type=radio] {
+      display: none;
+      $token-diameter: 30px;
+      $token-border: 2px;
+      $token-width: $token-diameter - $token-border * 2;
+      $token-border-checked: 5px;
+      $token-width-checked: $token-diameter - $token-border * 2;
+      &+ * .token {
+        height: $token-width;
+        width: $token-width;
+        border-width: $token-border;
+        &.phantom {
+          cursor: not-allowed;
+        }
+      }
+      &:checked + * .token {
+        height: $token-width-checked;
+        width: $token-width-checked;
+        border-width: $token-border-checked;
+      }
+    }
+  }
+  
+  .avatar-wrapper .token {
+    height: 100px;
+    width: 100px;
+    border-width: 5px;
+  }
+}

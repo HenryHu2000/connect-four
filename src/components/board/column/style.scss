@@ -1,0 +1,11 @@
+.column {
+  display: inline-block;
+  padding: 0 10px;
+
+  &.clickable {
+    cursor: pointer;
+  }
+  &:not(.clickable) {
+    cursor: not-allowed;
+  }
+}

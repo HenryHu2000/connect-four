@@ -1,0 +1,9 @@
+@import 'src/common';
+
+.board {
+  border-radius: 50px;
+  background: $boardColour;
+  padding: 20px;
+  width: fit-content;
+  margin: 50px auto;
+}

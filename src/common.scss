@@ -1,0 +1,28 @@
+$fontColour: #666;
+
+$boardColour: #eeeeee;
+
+$redColour: #f8cecc;
+$orangeColour: #ffe6cc;
+$yellowColour: #fff2cc;
+$greenColour: #d5e8d4;
+$blueColour: #dae8fc;
+$purpleColour: #e1d5e7;
+
+input[type=submit] {
+    background-color: darken($orangeColour, 25);
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    display: inline-block;
+    font-size: 125%;
+    border-radius: 10px;
+    &:hover {
+      background-color: darken($orangeColour, 30);
+      cursor: pointer;
+      &:active {
+        background-color: darken($orangeColour, 40);
+      }
+    }
+  } 
